@@ -759,7 +759,7 @@ static inline CGPoint SVGCurveReflectedControlPoint(SVGCurve prevCurve)
 	SVGKitLogWarn(@"[%@] PATH: finished path", [SVGKPointsAndPathsParser class] );
 #endif
 
-	return SVGCurveMakePoint(CGPathGetCurrentPoint(path));
+	return SVGCurveMakePoint(origin);
 }
 
 + (SVGCurve) readEllipticalArcArguments:(NSScanner*)scanner path:(CGMutablePathRef)path relativeTo:(CGPoint)origin isRelative:(BOOL) isRelative
